@@ -16,3 +16,11 @@ class MyPlane(pygame.sprite.Sprite):
         self.rect.y += self.speed
         if self.rect.y > 700:
             self.kill()
+    def down(self):
+        self.rect.y += self.speed
+        if self.rect.y > 700:
+            self.kill()
+    def down(self):
+        self.rect.y += self.speed
+        if self.rect.y > 700:
+            self.kill()
