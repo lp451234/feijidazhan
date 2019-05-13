@@ -11,3 +11,8 @@ class MyPlane(pygame.sprite.Sprite):
         # self.width,self.height = bg_size[0],bg_size[1]
         # self.rect.left,self.rect.top = (self.width - self.rect.width) // 2 ,self.height - self.rect.height -60
         self.speed = 10
+
+    def down(self):
+        self.rect.y += self.speed
+        if self.rect.y > 700:
+            self.kill()
